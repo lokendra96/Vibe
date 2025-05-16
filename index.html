@@ -1,0 +1,123 @@
+
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function ElderlyFashionSite() {
+  return (
+    <div className="bg-white text-black font-sans">
+      {/* Header */}
+      <header className="bg-green-50 p-6 shadow-md sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
+          <h1 className="text-2xl font-bold text-green-800">ComfortWear SG</h1>
+          <nav className="space-x-4 text-lg">
+            <Button variant="ghost">Shop Now</Button>
+            <Button variant="ghost">New Arrivals</Button>
+            <Button variant="ghost">Sale</Button>
+            <Button variant="ghost">Size Guide</Button>
+            <Button variant="ghost">Contact Us</Button>
+          </nav>
+        </div>
+      </header>
+
+      {/* Banner Slider */}
+      <section className="bg-blue-100 p-8 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Discover Comfort & Style</h2>
+        <p className="text-lg mb-6">Explore our new arrivals tailored for your comfort</p>
+        <Button className="text-lg px-6 py-3">Browse Collection</Button>
+      </section>
+
+      {/* Trust Signals */}
+      <section className="max-w-6xl mx-auto p-6 grid md:grid-cols-3 gap-4">
+        <Card>
+          <CardContent className="text-center p-4">
+            <p className="font-bold text-green-700">Secure Checkout</p>
+            <p>All payments are encrypted and safe.</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="text-center p-4">
+            <p className="font-bold text-green-700">Verified Reviews</p>
+            <p>Trusted by seniors across Singapore.</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="text-center p-4">
+            <p className="font-bold text-green-700">Easy Returns</p>
+            <p>30-day hassle-free returns.</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Product Listings */}
+      <section className="max-w-6xl mx-auto p-6">
+        <h3 className="text-2xl font-bold mb-4">Featured Products</h3>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardContent className="p-4">
+              <img src="/images/cardigan.jpg" alt="Soft cotton cardigan" className="mb-4" />
+              <p className="text-xl font-semibold">Cotton Comfort Cardigan</p>
+              <p>Material: 100% Cotton. Fit: Relaxed. Colors: Blue, Beige</p>
+              <p className="font-bold text-green-800">SGD 59.90</p>
+              <Button className="mt-2 w-full">Add to Cart</Button>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <img src="/images/pants.jpg" alt="Elastic waist pants" className="mb-4" />
+              <p className="text-xl font-semibold">EasyFit Pants</p>
+              <p>Material: Cotton Blend. Fit: Relaxed. Colors: Grey, Navy</p>
+              <p className="font-bold text-green-800">SGD 45.90</p>
+              <Button className="mt-2 w-full">Add to Cart</Button>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <img src="/images/tshirt.jpg" alt="Breathable t-shirt" className="mb-4" />
+              <p className="text-xl font-semibold">Breathe Easy Tee</p>
+              <p>Material: Bamboo Cotton. Fit: Relaxed. Colors: White, Mint</p>
+              <p className="font-bold text-green-800">SGD 29.90</p>
+              <Button className="mt-2 w-full">Add to Cart</Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Size Guide */}
+      <section className="bg-green-50 p-6">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-2xl font-bold mb-4">Size Guide</h3>
+          <p className="mb-2">Use a measuring tape and refer to the chart below:</p>
+          <ul className="list-disc pl-6">
+            <li>Measure bust/chest, waist, and hip in cm or inches.</li>
+            <li>Compare with our size chart for best fit.</li>
+            <li>Choose a relaxed fit for maximum comfort.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* FAQ & Support */}
+      <section className="max-w-4xl mx-auto p-6">
+        <h3 className="text-2xl font-bold mb-4">FAQs</h3>
+        <ul className="list-disc pl-6 text-lg">
+          <li>Delivery takes 2–4 business days within Singapore.</li>
+          <li>Returns are accepted within 30 days with tags intact.</li>
+          <li>Our products can be machine washed unless stated otherwise.</li>
+        </ul>
+        <div className="mt-6">
+          <h4 className="text-xl font-semibold mb-2">Contact Us</h4>
+          <p>Email: support@comfortwear.sg | Phone: +65 6123 4567</p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-green-100 p-6 text-center text-sm">
+        <p>&copy; 2025 ComfortWear SG. All rights reserved. | Language: English | 中文</p>
+        <div className="mt-2">
+          <a href="#" className="mr-4">Facebook</a>
+          <a href="#" className="mr-4">Instagram</a>
+        </div>
+      </footer>
+    </div>
+  );
+}
